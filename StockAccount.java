@@ -104,17 +104,21 @@ public class StockAccount {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Company name :" + CompanyName);
-		System.out.println("Stock Rating  :" +stockRating);
-		System.out.println("Price is :" + price);
-		System.out.println("Number of shares  :" + numOfShares);
+		System.out.println("Company name :" );
+		String CompanyName = sc.next();
+		System.out.println("Stock Rating  :");
+		String stockRating = sc.next();
+		System.out.println("Price is :");
+		String price = sc.next();
+		System.out.println("Number of shares  :" );
+		String numOfShares = sc.next();
 		
-		int price [] = { 50, 60, 70, 80, 130};
-		int size = price.length;                 //computing the size
+		int price1 [] = { 50, 60, 70, 80, 130};
+		int size = price1.length;                 //computing the size
 		System.out.println("the price of the stock on different days is: ");
 		
 		for(int i = 0; i <size; i++) {
-			System.out.println(price[i] + " ");
+			System.out.println(price1[i] + " ");
 		}
 		System.out.println();
 		StockAccount obj = new StockAccount(CompanyName, CompanyName, CompanyName, CompanyName);
